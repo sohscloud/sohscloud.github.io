@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "stylesheet.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<body>
+		<h1 id="title1"> faded </h1>
+		<p id="subtitle1"> welcome! nice to see you here </p>
+
+		<!--profile image-->
+		<img src = "https://66.media.tumblr.com/5256f684e99a55d22aa83fe0f9273a98/tumblr_nrys2cEI6O1tn6jt3o1_640.jpg" class = "profilepic">
+
+		<!--navigation-->
+		<div id="rectangle1"></div>
+
+		<!--quote-->
+		<p id="quotation1"> “ </p>
+		<p id="quotation2"> ” </p>
+		<p id="quote"> i never dreamed about success. i worked for it.
+		~ estee lauder </p>
+
+		<!--post 1-->
+		<button id = "post1" class="button1"> </button> 
+		<div id="popup1" class="modals">
+			<div class="box1"> </div>
+		</div>
+
+		<!--post 2-->
+		<button id="post2" class = "button2"> </button>
+		<div id="popup2" class="modals">
+			<div class="box2"> </div>
+		</div> 
+
+		<!--post 3-->
+		<button id="post3" class="button3"> </button>
+		<div id="popup3" class="modals">
+			<div class="box3"> </div>
+		</div> 
+
+
+
+		<button onclick="location.href = 'blogpost1.html' " class = "blog1" > Random blog post ;) </button>
+
+		<script>
+			//post 1
+			var modali = document.getElementById("popup1");
+			//get button
+			var btn1 = document.getElementById("post1");
+			//show button on click
+			btn1.onclick = function() {
+				modali.style.display = "block";
+			}
+			
+			//post 2
+			var modalii = document.getElementById("popup2");
+			var btn2 = document.getElementById("post2");
+			btn2.onclick = function() {
+				modalii.style.display = "block";
+			}
+
+			//post 3
+			var modaliii = document.getElementById("popup3");
+			var btn3 = document.getElementById("post3");
+			btn3.onclick = function() {
+				modaliii.style.display = "block";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modali) {
+					modali.style.display = "none";
+				}
+				if (event.target == modalii) {
+					modalii.style.display = "none";
+				}
+				if (event.target == modaliii) {
+					modaliii.style.display = "none";
+				}
+			}
+
+		</script>
+		
+
+
+
+
+
+
+	</body>
+</head>
+</html>
