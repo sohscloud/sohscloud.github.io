@@ -1,1 +1,3 @@
-# sohscloud.github.io
+# random projects ~
+
+hello!! hope you have a good day :)
